@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/blogDB").then(function () {
+mongoose.connect("mongodb+srv://admin-Ansh:Blog%40123@cluster0.6ihsu.mongodb.net/blogDB").then(function () {
   console.log("Successfully connected to Database");
 }).catch(function (err) {
   console.log(err);
